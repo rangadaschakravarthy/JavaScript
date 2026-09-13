@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Function Playground — Day 11 Mini-Project</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #0f172a; color: #f8fafc; padding: 20px; }
+    .card { background: #1e293b; padding: 20px; border-radius: 8px; max-width: 600px; margin: 0 auto; border: 1px solid #334155; }
+    select, input, button { width: 100%; padding: 10px; margin: 8px 0; border-radius: 4px; box-sizing: border-box; }
+    select, input { background: #090d16; border: 1px solid #334155; color: #38bdf8; font-family: monospace; }
+    button { background: #38bdf8; color: #0f172a; border: none; font-weight: bold; cursor: pointer; }
+    .output { background: #090d16; padding: 12px; border-radius: 4px; border: 1px solid #334155; font-family: monospace; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>⚡ Function Playground</h2>
+    <label>Select Function Type:</label>
+    <select id="fnType">
+      <option value="decl">Function Declaration (add)</option>
+      <option value="expr">Function Expression (multiply)</option>
+      <option value="arrow">Arrow Implicit Return (square)</option>
+      <option value="rest">Rest Parameter Sum (...nums)</option>
+    </select>
+    <label>Enter Comma-Separated Numbers:</label>
+    <input type="text" id="numsInput" value="5, 10, 15">
+    <button id="runBtn">Execute Selected Function</button>
+    <div id="output" class="output">Select type and click Execute...</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
